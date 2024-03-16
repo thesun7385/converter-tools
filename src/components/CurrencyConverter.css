@@ -46,7 +46,7 @@
     background-color: #E0E0E0;
   }
   
-  @media (max-width: 768px) {
+  @media (max-width: 1017px) {
     .currency-group {
       flex-direction: column;
       align-items: center;

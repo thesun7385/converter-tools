@@ -59,7 +59,7 @@ p {
   
   
 
-@media (max-width: 768px) {
+@media (max-width: 1017px) {
     .crypto-group {
       flex-direction: column;
       align-items: center;
