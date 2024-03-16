@@ -1,0 +1,63 @@
+.currency-group{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    margin: 2rem;
+  }
+  
+  
+  .currency-group p {
+    text-transform: uppercase;
+    font-size: 1.5rem;
+    justify-content: center;
+    margin: 20px
+  }
+  
+  .currency-control input{
+    font-family: inherit;
+    font-size: 1rem;
+    padding: 10px;
+    border-radius: 20px;
+    border-width: 0.5px; /* Adjust this value for a very thin border */
+    font-weight: 500;
+    border: none; /* Add this line to remove the border */
+    width: 400px;
+    margin: 5px;
+  }
+
+  .currency-control select{
+    font-family: inherit;
+    font-size: 1rem;
+    padding: 10px;
+    border-radius: 20px;
+    border-width: 0.5px; /* Adjust this value for a very thin border */
+    font-weight: 500;
+    border: none; /* Add this line to remove the border */
+    width: 400px;
+    margin: 5px;
+  }
+  
+  .currency-control select:hover {
+    background-color: #E0E0E0;
+  }
+  
+  .currency-control input:hover {
+    background-color: #E0E0E0;
+  }
+  
+  @media (max-width: 768px) {
+    .currency-group {
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+  }
+
+  .currency-control select,
+  .currency-control input {
+      width: 100%; /* Make the width 100% to take up the full width of the container */
+      margin: 10px 0; /* Adjust margin as needed for spacing between elements */
+  }
+  }
+  
+  

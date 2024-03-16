@@ -1,9 +1,8 @@
-body {
+* {
   margin: 0;
-  display: flex;
-  height: 80vh; /* Make sure the body takes 100% of the viewport height */
-  justify-content: center;
-  align-items: center;
+  padding: 0;
+  box-sizing: border-box;
+
 }
 
 html {
@@ -11,49 +10,80 @@ html {
   font-optical-sizing: auto;
   font-weight: 600;
   font-style: normal;
+  scroll-behavior: smooth;
 }
 
-.currency-group{
+.navbar {
+  position: -webkit-sticky;
+  position: sticky;
+  top: 0;
+  width: 100%; /* Make sure the navbar spans the full width */
+  display: flex; /* Use flexbox */
+  background-color: hsl(0, 0%, 25%);
+  text-transform: uppercase;
+  justify-content: center;
+
+}
+
+.navbar ul{
+  list-style-type:none;
+  background-color: hsl(0, 0%, 25%);
+  padding: 0px;
+  margin: 0px;
+  overflow: hidden;
   display: flex;
-  flex-direction: column;
-  align-items: center;
   justify-content: center;
 }
 
-
-.currency-group p {
-
-  text-transform: uppercase;
-  font-size: 1.5rem;
-}
-
-.currency-control input, select{
-  font-family: inherit;
-  font-size: 1.5rem;
-  margin-left: 20px;
-  margin-bottom: 20px;
-  padding: 10px;
-  border-radius: 10px;
-  border-width: 1px;
-  font-weight: 600;
+.navbar a{
+  color:white;
+  text-decoration: none;
+  padding: 15px;
+  display: block;
 
 }
 
-.currency-control input{
-  max-width: 180px;
-  
+.navbar a:hover{
+  background-color: hsl(0, 0%, 10%);
 }
 
-.currency-control select{
-  max-width: 120px;
-  cursor: pointer;
+.navbar li{
+  float: left;
+  text-align: center;
 }
 
-.currency-control select:hover {
-  background-color:#ECEFF1;
+footer {
+  background-color: hsl(0, 0%, 25%);
+  color: white;
+  position: fixed; /* or absolute */
+  bottom: 0;
+  width: 100%; /* Adjust the width as needed */
+  height: 45px; /* Adjust the height as needed */
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 
-.currency-control input:hover {
-  background-color: #ECEFF1;
+footer p {
+  font-size: small;
+
 }
+
+section{
+  height: 100vh;
+}
+
+
+.page-1{
+  background: #F5F5F5;
+}
+
+.page-2{
+  background: radial-gradient(#ECF0F1 );
+}
+
+.page-3{
+  background: radial-gradient(#F0F4C3);
+}
+
 

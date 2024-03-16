@@ -1,0 +1,76 @@
+/* create a box */
+.crypto-group {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    margin-top: 2rem;
+}
+
+p {
+    text-transform: uppercase;
+    font-size: 1.5rem;
+    text-align: center;
+    justify-content: center;
+    margin: 20px
+  }
+
+.crypto-control input {
+    font-family: inherit;
+    font-size: 1rem;
+    display: flex;
+    width: 500px;
+    padding: 10px;
+    border-radius: 5px;
+    border-width: 1px;
+    font-weight: 700;
+    border-width: 1px;
+    margin: 5px;
+    border: none;
+    background-color: #ECEFF1;
+
+    
+}
+
+.crypto-control select {
+    font-family: inherit;
+    font-size: 1rem;
+    display: flex;
+    width: 500px;
+    padding: 10px;
+    border-radius: 5px;
+    border-width: 1px;
+    font-weight: 700;
+    border-width: 1px;
+    margin: 5px;
+    border: none;
+    background-color: #ECEFF1;
+
+}
+  
+.crypto-control select:hover {
+    background-color: #CFD8DC
+  }
+  
+.crypto-control input:hover {
+ 
+    background-color: #CFD8DC
+    }
+  
+  
+
+@media (max-width: 768px) {
+    .crypto-group {
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+  }
+
+  .crypto-control select,
+  .crypto-control input {
+      width: 100%; /* Make the width 100% to take up the full width of the container */
+      margin-bottom: 10px; /* Adjust margin as needed for spacing between elements */
+  }
+  }
+  
+  

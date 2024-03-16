@@ -1,7 +1,9 @@
 // type "rfc" keyword for creating a functional component
 import { useState, useEffect } from "react";
+import PropTypes from "prop-types";
 import CurrencyInput from "./CurrencyInput";
 import axios from "axios";
+import "./CurrencyConverter.css";
 
 export default function CurrencyConverter() {
   // Initialize the state
@@ -22,7 +24,7 @@ export default function CurrencyConverter() {
         const eurData = res.data.eur;
 
         // check obejct in the console
-        console.log(eurData);
+        // console.log(eurData);
 
         // set the rates
         setRates(eurData);
@@ -68,24 +70,32 @@ export default function CurrencyConverter() {
   }
 
   return (
-    <div className="currency-group">
-      <CurrencyInput
-        onAmountChange={handleAmount1Change}
-        onCurrencyChange={handleCurrency1Change}
-        currencies={Object.keys(rates)}
-        amount={amount1}
-        currency={currency1}
-      />
-      <CurrencyInput
-        onAmountChange={handleAmount2Change}
-        onCurrencyChange={handleCurrency2Change}
-        currencies={Object.keys(rates)}
-        amount={amount2}
-        currency={currency2}
-      />
-      <p>
-        {amount1} {currency1} = {amount2} {currency2}
-      </p>
-    </div>
+    <>
+      <div className="currency-group">
+        <CurrencyInput
+          onAmountChange={handleAmount1Change}
+          onCurrencyChange={handleCurrency1Change}
+          currencies={Object.keys(rates)}
+          amount={amount1}
+          currency={currency1}
+        />
+        <CurrencyInput
+          onAmountChange={handleAmount2Change}
+          onCurrencyChange={handleCurrency2Change}
+          currencies={Object.keys(rates)}
+          amount={amount2}
+          currency={currency2}
+        />
+        <p>
+          {amount1} {currency1} = {amount2} {currency2}
+        </p>
+      </div>
+    </>
   );
 }
+
+// validate the type of the prop
+CurrencyInput.propTypes = {
+  amount1: PropTypes.number,
+  amount2: PropTypes.number,
+};
