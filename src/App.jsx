@@ -10,18 +10,18 @@ function App() {
       <nav className="navbar">
         <ul>
           <li>
-            <a href="currency-page">Currency Converter</a>
+            <a href="#currency-page">Currency Converter</a>
           </li>
           <li>
-            <a href="crypto-page">Crypto Converter</a>
+            <a href="#crypto-page">Crypto Converter</a>
           </li>
         </ul>
       </nav>
-      <section id="#currency-page" className="page-1">
+      <section id="currency-page" className="page-1">
         <Header content="currency converter" logoImg={exchangeLogo} />
         <CurrencyConverter />
       </section>
-      <section id="#crypto-page" className="page-2">
+      <section id="crypto-page" className="page-2">
         <Header content="Crypto Converter" logoImg={cryptoLogo} />
         <CryptoConverter />
       </section>
