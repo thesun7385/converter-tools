@@ -2,6 +2,8 @@
 
  versatile tool designed to swiftly convert between different fiat currencies and cryptocurrencies with real-time exchange rates.
 
+ <img src="https://res.cloudinary.com/dwsihr9yg/image/upload/v1712467065/web-screenshots/currency-converter-c540bf.netlify.app_dt9enw.jpg" alt="currency-web-app">
+
 ## Table of contents
 - Basic Features
 - Tools and Frameworks
